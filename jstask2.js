@@ -8,7 +8,7 @@ let data = [
 function interestCalculator(){
     const interestData = data.map(pp=>{
         let rate;
-        if(pp.principal >= 2500 && pp.time < 3){
+        if(pp.principal >= 2500 && (pp.time > 1 && pp.time < 3)){
             rate = 3;
         }
         else if(pp.principal >= 2500 &&  pp.time >= 3){
